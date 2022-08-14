@@ -1,0 +1,27 @@
+require: rubocop-sketchup
+
+AllCops:
+  DisabledByDefault: true
+  DisplayStyleGuide: true
+  ExtraDetails: true
+  SketchUp:
+    SourcePath: ruby
+    TargetSketchUpVersion: 2020
+  Exclude:
+    - cext/**/*
+    - third-party/**/*
+
+SketchupDeprecations:
+  Enabled: true
+
+SketchupPerformance:
+  Enabled: true
+
+SketchupRequirements:
+  Enabled: true
+
+SketchupSuggestions:
+  Enabled: true
+
+SketchupBugs:
+  Enabled: true

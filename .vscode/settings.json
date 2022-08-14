@@ -1,0 +1,114 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [
+      80
+  ],
+
+  "solargraph.diagnostics": true,
+  "solargraph.useBundler": true,
+
+  // "cmake.loggingLevel": "debug", // CMakeTools
+  "cmake.buildDirectory": "${workspaceRoot}/cext/build/${buildType}",
+  "cmake.configureOnOpen": true,
+  "cmake.configureArgs": [
+    // https://github.com/microsoft/vscode-cmake-tools/issues/892
+    // "--log-level=DEBUG" // Enable to get more info from CMake.
+  ],
+  "cmake.configureSettings": {
+    "SketchUpAPI_SEARCH_DIR": "${workspaceRoot}/../../SLAPI",
+    // Below config is used to provide explicit paths to the C API library
+    // and bundle loader.
+    // For instance, if the project target lowest SketchUp version is 2020 and
+    // you only have SketchUp 2021 installed you want to override the
+    // SketchUpAPI_BUNDLE_LOADER as it will default to look for the SketchUp
+    // version matching the minimum SDK version.
+    // "SketchUpAPI_DIR": "${workspaceRoot}/../../SLAPI/SDK_WIN_x64_2020-2-172",
+    // "SketchUpAPI_BUNDLE_LOADER": "/Users/tthomas2/src/git/client/sketchup/products/Debug/SketchUp.app/Contents/MacOS/SketchUp"
+    // "SketchUpAPI_BUNDLE_LOADER": "/Users/tthomas2/src/git/client/sketchup/products/Release/SketchUp.app/Contents/MacOS/SketchUp"
+    // "SketchUpAPI_BUNDLE_LOADER": "/Applications/SketchUp 2020/SketchUp.app/Contents/MacOS/SketchUp"
+  },
+
+  "testMate.cpp.test.advancedExecutables":[
+    {
+      "name": "${filename}",
+      "description": "${relDirpath}/",
+      "pattern": "cext/build/**/*{test,Test,TEST}*"
+    }
+  ],
+  "testExplorer.sort": "byLabelWithSuitesFirst",
+
+  "search.exclude": {
+    "third-party/**": true
+  },
+
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.in": "cpp",
+    "algorithm": "cpp",
+    "array": "cpp",
+    "cctype": "cpp",
+    "cmath": "cpp",
+    "concepts": "cpp",
+    "cstddef": "cpp",
+    "cstdint": "cpp",
+    "cstdio": "cpp",
+    "cstdlib": "cpp",
+    "cstring": "cpp",
+    "cwchar": "cpp",
+    "exception": "cpp",
+    "initializer_list": "cpp",
+    "ios": "cpp",
+    "iosfwd": "cpp",
+    "istream": "cpp",
+    "iterator": "cpp",
+    "limits": "cpp",
+    "memory": "cpp",
+    "new": "cpp",
+    "ostream": "cpp",
+    "stdexcept": "cpp",
+    "streambuf": "cpp",
+    "string": "cpp",
+    "system_error": "cpp",
+    "tuple": "cpp",
+    "type_traits": "cpp",
+    "typeinfo": "cpp",
+    "utility": "cpp",
+    "vector": "cpp",
+    "xfacet": "cpp",
+    "xiosbase": "cpp",
+    "xlocale": "cpp",
+    "xlocinfo": "cpp",
+    "xlocnum": "cpp",
+    "xmemory": "cpp",
+    "xstddef": "cpp",
+    "xstring": "cpp",
+    "xtr1common": "cpp",
+    "xutility": "cpp",
+    "cassert": "cpp",
+    "ctime": "cpp",
+    "deque": "cpp",
+    "forward_list": "cpp",
+    "fstream": "cpp",
+    "functional": "cpp",
+    "iomanip": "cpp",
+    "iostream": "cpp",
+    "list": "cpp",
+    "map": "cpp",
+    "set": "cpp",
+    "sstream": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "xhash": "cpp",
+    "xlocmon": "cpp",
+    "xloctime": "cpp",
+    "xtree": "cpp",
+    "numeric": "cpp",
+    "queue": "cpp",
+    "chrono": "cpp",
+    "filesystem": "cpp",
+    "locale": "cpp",
+    "ratio": "cpp",
+    "xlocbuf": "cpp",
+    "xlocmes": "cpp"
+  }
+}

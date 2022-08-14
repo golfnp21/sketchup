@@ -1,0 +1,23 @@
+# SLAPI
+third-party/slapi/**/*
+!third-party/slapi/*.md
+
+# CMake (VSCode)
+cext/build/
+
+# CMake (Visual Studio)
+.vs/
+out/
+
+# Example build directory
+build/
+
+# Binaries
+*.so
+*.bundle
+
+# Bundler
+Gemfile.lock
+
+# YARD
+.yardoc/
